@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
   }
 
   use 'Mofiqul/vscode.nvim'
+  use "nvim-tree/nvim-web-devicons"
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -34,6 +35,9 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
+  use 'mfussenegger/nvim-jdtls'
+
   use {
     'numToStr/Comment.nvim',
     config = function()
@@ -84,4 +88,32 @@ return require('packer').startup(function(use)
         )
     end
   }
+
+  use "m4xshen/smartcolumn.nvim"
+
+  use({
+      "utilyre/barbecue.nvim",
+      tag = "*",
+      requires = {
+          "SmiteshP/nvim-navic",
+          "nvim-tree/nvim-web-devicons", -- optional dependency
+      },
+      after = "nvim-web-devicons", -- keep this if you're using NvChad
+      config = function()
+          require("barbecue").setup()
+      end,
+  })
+
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+      config = function()
+          require("lualine").setup {
+              options = { theme = "codedark" }
+          }
+      end
+  }
+
+  use "tpope/vim-fugitive"
+
 end)

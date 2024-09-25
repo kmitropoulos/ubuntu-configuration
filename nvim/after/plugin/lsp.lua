@@ -25,10 +25,15 @@ cmp.setup({
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {},
+  ensure_installed = {'jdtls'},
   handlers = {
     function(server_name)
-      require('lspconfig')[server_name].setup({})
+      require('lspconfig')[server_name].setup({
+        on_attach = lsp_attach,
+        capabilities = lsp_capabilities,
+    })
     end,
+    ['jdtls'] = noop,
+    jdtls = lsp_zero.noop,
   },
 })
