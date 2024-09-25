@@ -17,3 +17,5 @@ Created following the ThePrimeagen tutorial: https://www.youtube.com/watch?v=w7i
 5. restart nvim
 
 ### Tested with neovim v0.10.0
+
+# HackNerdFonts are used from https://www.nerdfonts.com/font-downloads
