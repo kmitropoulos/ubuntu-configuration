@@ -1,0 +1,53 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "percent": 0.7,
+            "marks": [],
+            "name": "Firefox",
+            "swallows": [
+                {
+                    "class": "^firefox$"
+                }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "marks": [],
+            "name": "help terminal",
+            "percent": 0.3,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "marks": [],
+    "name": "main terminal",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^Gnome\\-terminal$"
+       }
+    ],
+    "type": "con"
+}
