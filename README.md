@@ -1,6 +1,8 @@
+# configurations that are used to set up an ubuntu installation with my preferences
+## (has not been tested fully yet)
+
 # nvim-conf
 config files and instalation for neovim
-
 Created following the ThePrimeagen tutorial: https://www.youtube.com/watch?v=w7i4amO_zaE&t=476s&ab_channel=ThePrimeagen
 
 # Setup
