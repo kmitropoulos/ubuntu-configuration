@@ -60,7 +60,11 @@ sudo ln -s /usr/bin/clang-18 /usr/bin/clang
 sudo ubuntu-drivers autoinstall
 
 # wireshark
-sudo apt install wireshark
+# sudo apt install wireshark
+# install wireshark from deb file in site(todo)
+
+# dbeaver
+# install dbeaver from deb file in site(todo)
 
 # Errands todo list
 sudo apt-get install -y flatpak
