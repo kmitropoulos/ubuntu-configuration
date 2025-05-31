@@ -17,8 +17,15 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("n", "<leader>P", "\"+p")
 vim.keymap.set("v", "<leader>P", "\"+p")
 
-vim.keymap.set("n", "<C-w>s", "<C-w>s<C-w>j", { noremap = true })
-vim.keymap.set("n", "<C-w>v", "<C-w>v<C-w>l", { noremap = true })
+vim.keymap.set("n", "<C-w>s", "<C-w>s<ESC><C-w>j", { noremap = true })
+vim.keymap.set("n", "<C-w>v", "<C-w>v<ESC><C-w>l", { noremap = true })
+
+-- vim.keymap.set("i", "[", "[]<ESC>ha", { noremap = true})
+-- vim.keymap.set("i", "{", "{}<ESC>ha", { noremap = true})
+-- vim.keymap.set("i", "(", "()<ESC>ha", { noremap = true})
+-- vim.keymap.set("i", "\"", "\"\"<ESC>ha", { noremap = true})
+-- vim.keymap.set("i", "'", "''<ESC>ha", { noremap = true})
+-- vim.keymap.set("i", "<", "<><ESC>ha", { noremap = true})
 
 vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
@@ -27,4 +34,3 @@ vim.keymap.set("n", "<C-l>", "<cmd>noh<CR>")
 
 vim.keymap.set("n", "<leader>sd", vim.diagnostic.open_float)
 
-vim.g.zig_fmt_autosave = 0
